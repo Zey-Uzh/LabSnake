@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Змейка</string>
+    <string name="action_settings">Настройки</string>
+    <string name="start">Пуск</string>
+    <string name="restart">Перезапуск</string>
+    <string name="score_label">"Очки: "</string>
+</resources>
