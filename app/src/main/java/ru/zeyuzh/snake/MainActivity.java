@@ -196,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
             if (Math.abs(gX) > Math.abs(gY)) {
                 // left-right
                 if (gX > 0) {
-                    if (secondSegment.getX() == headSegment.getX() - STEP) {
+                    if (secondSegment.getX() == headSegment.getX() - 1) {
                         if (gY > 0) {
                             render(0, 1);   //down
                         } else {
@@ -206,7 +206,7 @@ public class MainActivity extends AppCompatActivity {
                         render(-1, 0); //left
                     }
                 } else {
-                    if (secondSegment.getX() == headSegment.getX() + STEP) {
+                    if (secondSegment.getX() == headSegment.getX() + 1) {
                         if (gY > 0) {
                             render(0, 1);   //down
                         } else {
@@ -219,7 +219,7 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 // up-down
                 if (gY > 0) {
-                    if (secondSegment.getY() == headSegment.getY() + STEP) {
+                    if (secondSegment.getY() == headSegment.getY() + 1) {
                         if (gX > 0) {
                             render(-1, 0); //left
                         } else {
@@ -229,7 +229,7 @@ public class MainActivity extends AppCompatActivity {
                         render(0, 1);   //down
                     }
                 } else {
-                    if (secondSegment.getY() == headSegment.getY() - STEP) {
+                    if (secondSegment.getY() == headSegment.getY() - 1) {
                         if (gX > 0) {
                             render(-1, 0); //left
                         } else {
